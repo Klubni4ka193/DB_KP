@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Просмотр турнирной сетки</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        svg {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>Просмотр турнирной сетки</header>
+    <main>
+        <h2>Сетка</h2>
+        <div id="bracket" data-category="{{ category }}">
+            {{ svg_content|safe }}
+        </div>
+        <script>
+                function saveBracket() {
+                    const bracketContent = document.getElementById('bracketContent').innerHTML;
+                    const category = document.getElementById('bracketContent').dataset.category;
+
+                    console.log("Сохраняем изменения в сетке...");
+                    console.log({ bracket: bracketContent, category });
+
+                    fetch('/save_bracket', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ bracket: bracketContent, category: category })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.message) {
+                            console.log("Ответ сервера:", data.message);
+                        }
+                    })
+                    .catch(error => console.error('Ошибка при сохранении сетки:', error));
+                }
+
+                function initializeWinnerSelection() {
+                    // Обрабатываем все элементы с id participant_ и winner_
+                    document.querySelectorAll('[id^="participant_"], [id^="winner_"]').forEach(element => {
+                        // Проверяем, был ли обработчик уже добавлен
+                        if (!element.dataset.clickInitialized) {
+                            element.addEventListener('click', () => {
+                                const winner = element.textContent.trim();
+                                const nextId = element.dataset.next;
+
+                                if (nextId) {
+                                    const nextElement = document.getElementById(nextId);
+                                    if (nextElement) {
+                                        console.log(`Победитель "${winner}" переходит в ${nextId}`);
+                                        nextElement.textContent = winner;
+                                    } else {
+                                        console.warn(`Элемент с id "${nextId}" не найден`);
+                                    }
+                                } else {
+                                    console.warn(`У элемента ${element.id} нет атрибута data-next`);
+                                }
+
+                                // Выделяем выбранного участника
+                                element.style.fill = 'gold';
+                                element.style.fontWeight = 'bold';
+                                saveBracket();
+                            });
+
+                            // Помечаем элемент как инициализированный
+                            element.dataset.clickInitialized = true;
+                        }
+                    });
+                }
+
+                // Функция загрузки SVG и вызова обработчиков
+                function loadSVG(category) {
+                    fetch(`/view_bracket/${category}`)
+                        .then(response => response.json())
+                        .then(data => {
+                            const parser = new DOMParser();
+                            const svgDoc = parser.parseFromString(data.svg_content, 'image/svg+xml');
+                            const svgElement = svgDoc.documentElement;
+
+                            const bracketContainer = document.getElementById('bracketContent');
+                            bracketContainer.innerHTML = ''; // Удаляем старое содержимое
+                            bracketContainer.appendChild(svgElement); // Вставляем новое
+
+                            console.log("SVG загружен, вызываем initializeWinnerSelection");
+                            initializeWinnerSelection(); // Повторный вызов для новых элементов
+                        })
+                        .catch(error => console.error('Ошибка при загрузке SVG:', error));
+                }
+
+                function setupAutoSave() {
+                    const svgElements = document.querySelectorAll('#bracketContent text');
+                    svgElements.forEach(element => {
+                        element.addEventListener('input', () => {
+                            saveBracket();
+                        });
+                    });
+                }
+
+                // Обработка загрузки страницы
+                document.addEventListener('DOMContentLoaded', () => {
+                    console.log("Инициализация страницы, вызываем initializeWinnerSelection");
+                    initializeWinnerSelection(); // Для статических элементов
+
+                    // Инициализация ссылок для загрузки SVG
+                    document.querySelectorAll('a').forEach(link => {
+                        link.addEventListener('click', (event) => {
+                            event.preventDefault();
+                            const category = link.href.split('/').pop();
+                            loadSVG(category);
+                        });
+                    });
+                });
+                document.addEventListener('DOMContentLoaded', initializeWinnerSelection);
+        </script>
+    </main>
+</body>
+</html>
