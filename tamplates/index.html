@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Турнирные сетки</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input, select, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>Управление турнирными сетками</header>
+    <main>
+        <h2>Добавить участника</h2>
+        <form id="addParticipantForm">
+            <input type="text" name="last_name" placeholder="Фамилия" required>
+            <input type="text" name="first_name" placeholder="Имя" required>
+            <input type="text" name="middle_name" placeholder="Отчество">
+            <input type="number" name="age" placeholder="Возраст" required>
+            <input type="number" step="0.1" name="weight" placeholder="Вес (кг)" required>
+            <input type="text" name="city" placeholder="Город" required>
+            <div>
+                <label><input type="radio" name="gender" value="М" > М</label>
+                <label><input type="radio" name="gender" value="Ж" > Ж</label>
+            </div>
+            <div>
+                <label><input type="radio" name="rank_type" value="кю" > Кю</label>
+                <label><input type="radio" name="rank_type" value="дан" > Дан</label>
+            </div>
+            <select name="rank_value" required>
+                <option value="">Выберите уровень</option>
+                {% for i in range(1, 11) %}
+                <option value="{{ i }}">{{ i }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Добавить</button>
+            <h2>Загрузить участников из Excel</h2>
+        </form>
+        <form id="uploadExcelForm" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".xlsx" required>
+            <button type="submit">Загрузить</button>
+        </form>
+
+        <h2>Доступные сетки</h2>
+        <ul>
+            {% for grid in grids %}
+            <li>
+                <!-- Ссылка для предпросмотра -->
+                <a href="{{ url_for('preview_bracket', category=grid[:-4]) }}" target="_blank">{{ grid }}</a>
+            </li>
+            {% else %}
+            <li>Нет доступных сеток.</li>
+            {% endfor %}
+        </ul>
+        <button class="button" onclick="openGridList()">Открыть список сеток</button>
+        <button class="button" onclick="generateGrids()">Создать новые сетки</button>
+        <button class="button" onclick="deleteGrids()">Удалить все сетки</button>
+    </main>
+    <script>
+        function generateGrids() {
+            fetch('/generate_grids', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => alert(data.message))
+                .catch(error => alert('Ошибка: ' + error));
+        }
+
+        function deleteGrids() {
+            fetch('/delete_grids', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => alert(data.message))
+                .catch(error => alert('Ошибка: ' + error));
+        }
+
+        function openGridList() {
+            window.open('/grid_list', '_blank');
+        }
+
+        document.getElementById('addParticipantForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+
+            fetch('/add_participant', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(data => alert(data.message))
+            .catch(error => alert('Ошибка: ' + error));
+        });
+
+        document.getElementById('uploadExcelForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+
+            fetch('/upload_excel', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(data => alert(data.message))
+            .catch(error => alert('Ошибка: ' + error));
+        });
+
+        function saveBracket() {
+            const bracketData = document.getElementById('bracketContent').innerHTML;
+
+            fetch('/save_bracket', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ bracket: bracketData }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);
+            })
+            .catch(error => alert('Ошибка при сохранении: ' + error));
+        }
+
+        // Добавление обработки кликов для выбора победителей
+        function initializeWinnerSelection() {
+            document.querySelectorAll('[id^="participant_"]').forEach(element => {
+                element.addEventListener('click', () => {
+                    const winner = element.textContent.trim();
+                    const nextId = element.dataset.next;
+
+                    if (nextId) {
+                        const nextElement = document.getElementById(nextId);
+                        if (nextElement) {
+                            nextElement.textContent = winner;
+                        }
+                    }
+
+                    element.style.fill = 'gold';
+                    element.style.fontWeight = 'bold';
+                });
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', initializeWinnerSelection);
+    </script>
+</body>
+</html>
