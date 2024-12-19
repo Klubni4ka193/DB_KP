@@ -1,0 +1,156 @@
+<svg width="1564" height="1492" viewBox="0 0 1564 1492" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="2" y="1346" width="272" height="48" rx="3" fill="white"/>
+<rect x="2" y="1346" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="participant_2" data-next="winner_1" x="113" y="1374" font-family="Arial" font-size="16" fill="black" text-anchor="middle">Команда 2</text>
+
+<rect x="314" y="1394" width="272" height="48" rx="3" fill="white"/>
+<rect x="314" y="1394" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="winner_1" data-next="winner_9" x="425" y="1422" font-family="Arial" font-size="16" fill="black" text-anchor="middle"></text>
+
+<path d="M282 1370V1370C288.627 1370 294 1375.37 294 1382V1406C294 1412.63 299.373 1418 306 1418V1418" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="2" y="1442" width="272" height="48" rx="3" fill="white"/>
+<rect x="2" y="1442" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="participant_1" data-next="winner_1" x="113" y="1470" font-family="Arial" font-size="16" fill="black" text-anchor="middle">Команда 1</text>
+
+<path d="M282 1466V1466C288.627 1466 294 1460.63 294 1454V1430C294 1423.37 299.373 1418 306 1418V1418" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="2" y="1154" width="272" height="48" rx="3" fill="white"/>
+<rect x="2" y="1154" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="participant_4" data-next="winner_2" x="113" y="1182" font-family="Arial" font-size="16" fill="black" text-anchor="middle">Команда 4</text>
+
+<rect x="314" y="1202" width="272" height="48" rx="3" fill="white"/>
+<rect x="314" y="1202" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="winner_2" data-next="winner_9" x="425" y="1230" font-family="Arial" font-size="16" fill="black" text-anchor="middle"></text>
+
+<path d="M282 1178V1178C288.627 1178 294 1183.37 294 1190V1214C294 1220.63 299.373 1226 306 1226V1226" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="2" y="1250" width="272" height="48" rx="3" fill="white"/>
+<rect x="2" y="1250" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="participant_3" data-next="winner_2" x="113" y="1278" font-family="Arial" font-size="16" fill="black" text-anchor="middle">Команда 3</text>
+
+<path d="M282 1274V1274C288.627 1274 294 1268.63 294 1262V1238C294 1231.37 299.373 1226 306 1226V1226" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="626" y="1298" width="272" height="48" rx="3" fill="white"/>
+<rect x="626" y="1298" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="winner_9" data-next="winner_13" x="737" y="1326" font-family="Arial" font-size="16" fill="black" text-anchor="middle"></text>
+
+<path d="M594 1226V1226C600.627 1226 606 1231.37 606 1238V1310C606 1316.63 611.373 1322 618 1322V1322" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M594 1418V1418C600.627 1418 606 1412.63 606 1406V1334C606 1327.37 611.373 1322 618 1322V1322" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="2" y="962" width="272" height="48" rx="3" fill="white"/>
+<rect x="2" y="962" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="participant_6" data-next="winner_3" x="113" y="990" font-family="Arial" font-size="16" fill="black" text-anchor="middle">Команда 6</text>
+
+<rect x="314" y="1010" width="272" height="48" rx="3" fill="white"/>
+<rect x="314" y="1010" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="winner_3" data-next="winner_10" x="425" y="1038" font-family="Arial" font-size="16" fill="black" text-anchor="middle"></text>
+
+<path d="M282 986V986C288.627 986 294 991.373 294 998V1022C294 1028.63 299.373 1034 306 1034V1034" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="2" y="1058" width="272" height="48" rx="3" fill="white"/>
+<rect x="2" y="1058" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="participant_5" data-next="winner_3" x="113" y="1086" font-family="Arial" font-size="16" fill="black" text-anchor="middle">Команда 5</text>
+
+<path d="M282 1082V1082C288.627 1082 294 1076.63 294 1070V1046C294 1039.37 299.373 1034 306 1034V1034" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="2" y="770" width="272" height="48" rx="3" fill="white"/>
+<rect x="2" y="770" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="participant_8" data-next="winner_4" x="113" y="798" font-family="Arial" font-size="16" fill="black" text-anchor="middle">Команда 8</text>
+
+<rect x="314" y="818" width="272" height="48" rx="3" fill="white"/>
+<rect x="314" y="818" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="winner_4" data-next="winner_10" x="425" y="846" font-family="Arial" font-size="16" fill="black" text-anchor="middle"></text>
+
+<path d="M282 794V794C288.627 794 294 799.373 294 806V830C294 836.627 299.373 842 306 842V842" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="2" y="866" width="272" height="48" rx="3" fill="white"/>
+<rect x="2" y="866" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="participant_7" data-next="winner_4" x="113" y="894" font-family="Arial" font-size="16" fill="black" text-anchor="middle">Команда 7</text>
+
+<path d="M282 890V890C288.627 890 294 884.627 294 878V854C294 847.373 299.373 842 306 842V842" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="626" y="914" width="272" height="48" rx="3" fill="white"/>
+<rect x="626" y="914" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="winner_10" data-next="winner_13" x="737" y="942" font-family="Arial" font-size="16" fill="black" text-anchor="middle"></text>
+
+<path d="M594 842V842C600.627 842 606 847.373 606 854V926C606 932.627 611.373 938 618 938V938" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M594 1034V1034C600.627 1034 606 1028.63 606 1022V950C606 943.373 611.373 938 618 938V938" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="946" y="1106" width="272" height="48" rx="3" fill="white"/>
+<rect x="946" y="1106" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="winner_13" data-next="final" x="1057" y="1134" font-family="Arial" font-size="16" fill="black" text-anchor="middle"></text>
+
+<path d="M906 938V938C914.837 938 922 945.163 922 954V1114C922 1122.84 929.163 1130 938 1130V1130" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M906 1322V1322C914.837 1322 922 1314.84 922 1306V1146C922 1137.16 929.163 1130 938 1130V1130" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="2" y="578" width="272" height="48" rx="3" fill="white"/>
+<rect x="2" y="578" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="participant_10" data-next="winner_5" x="113" y="606" font-family="Arial" font-size="16" fill="black" text-anchor="middle">Команда 10</text>
+
+<rect x="314" y="626" width="272" height="48" rx="3" fill="white"/>
+<rect x="314" y="626" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="winner_5" data-next="winner_11" x="425" y="654" font-family="Arial" font-size="16" fill="black" text-anchor="middle"></text>
+
+<path d="M282 602V602C288.627 602 294 607.373 294 614V638C294 644.627 299.373 650 306 650V650" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="2" y="674" width="272" height="48" rx="3" fill="white"/>
+<rect x="2" y="674" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="participant_9" data-next="winner_5" x="113" y="702" font-family="Arial" font-size="16" fill="black" text-anchor="middle">Команда 9</text>
+
+<path d="M282 698V698C288.627 698 294 692.627 294 686V662C294 655.373 299.373 650 306 650V650" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="2" y="386" width="272" height="48" rx="3" fill="white"/>
+<rect x="2" y="386" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="participant_12" data-next="winner_6" x="113" y="414" font-family="Arial" font-size="16" fill="black" text-anchor="middle">Команда 12</text>
+
+<rect x="314" y="434" width="272" height="48" rx="3" fill="white"/>
+<rect x="314" y="434" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="winner_6" data-next="winner_11" x="425" y="462" font-family="Arial" font-size="16" fill="black" text-anchor="middle"></text>
+
+<path d="M282 410V410C288.627 410 294 415.373 294 422V446C294 452.627 299.373 458 306 458V458" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="2" y="482" width="272" height="48" rx="3" fill="white"/>
+<rect x="2" y="482" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="participant_11" data-next="winner_6" x="113" y="510" font-family="Arial" font-size="16" fill="black" text-anchor="middle">Команда 11</text>
+
+<path d="M282 506V506C288.627 506 294 500.627 294 494V470C294 463.373 299.373 458 306 458V458" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="626" y="530" width="272" height="48" rx="3" fill="white"/>
+<rect x="626" y="530" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="winner_11" data-next="winner_14" x="737" y="568" font-family="Arial" font-size="16" fill="black" text-anchor="middle"></text>
+
+<path d="M594 458V458C600.627 458 606 463.373 606 470V542C606 548.627 611.373 554 618 554V554" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M594 650V650C600.627 650 606 644.627 606 638V566C606 559.373 611.373 554 618 554V554" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="2" y="194" width="272" height="48" rx="3" fill="white"/>
+<rect x="2" y="194" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="participant_14" data-next="winner_7" x="113" y="222" font-family="Arial" font-size="16" fill="black" text-anchor="middle">Команда 14</text>
+
+<rect x="314" y="242" width="272" height="48" rx="3" fill="white"/>
+<rect x="314" y="242" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="winner_7" data-next="winner_12" x="425" y="270" font-family="Arial" font-size="16" fill="black" text-anchor="middle"></text>
+
+<path d="M282 218V218C288.627 218 294 223.373 294 230V254C294 260.627 299.373 266 306 266V266" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="2" y="290" width="272" height="48" rx="3" fill="white"/>
+<rect x="2" y="290" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="participant_13" data-next="winner_7" x="113" y="318" font-family="Arial" font-size="16" fill="black" text-anchor="middle">Команда 13</text>
+
+<path d="M282 314V314C288.627 314 294 308.627 294 302V278C294 271.373 299.373 266 306 266V266" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="2" y="2" width="272" height="48" rx="3" fill="white"/>
+<rect x="2" y="2" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="participant_16" data-next="winner_8" x="113" y="30" font-family="Arial" font-size="16" fill="black" text-anchor="middle">Команда 16</text>
+
+<rect x="314" y="50" width="272" height="48" rx="3" fill="white"/>
+<rect x="314" y="50" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="winner_8" data-next="winner_12" x="425" y="78" font-family="Arial" font-size="16" fill="black" text-anchor="middle"></text>
+
+<path d="M282 26V26C288.627 26 294 31.3726 294 38V62C294 68.6274 299.373 74 306 74V74" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="2" y="98" width="272" height="48" rx="3" fill="white"/>
+<rect x="2" y="98" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="participant_15" data-next="winner_8" x="113" y="126" font-family="Arial" font-size="16" fill="black" text-anchor="middle">Команда 15</text>
+
+<path d="M282 122V122C288.627 122 294 116.627 294 110V86C294 79.3726 299.373 74 306 74V74" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="626" y="146" width="272" height="48" rx="3" fill="white"/>
+<rect x="626" y="146" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="winner_12" data-next="winner_14" x="737" y="174" font-family="Arial" font-size="16" fill="black" text-anchor="middle"></text>
+
+<path d="M594 74V74C600.627 74 606 79.3726 606 86V158C606 164.627 611.373 170 618 170V170" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M594 266V266C600.627 266 606 260.627 606 254V182C606 175.373 611.373 170 618 170V170" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="946" y="338" width="272" height="48" rx="3" fill="white"/>
+<rect x="946" y="338" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="winner_14" data-next="final" x="1057" y="366" font-family="Arial" font-size="16" fill="black" text-anchor="middle"></text>
+
+<path d="M906 170V170C914.837 170 922 177.163 922 186V346C922 354.837 929.163 362 938 362V362" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M906 554V554C914.837 554 922 546.837 922 538V378C922 369.163 929.163 362 938 362V362" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="1290" y="722" width="272" height="48" rx="3" fill="white"/>
+<rect x="1290" y="722" width="272" height="48" rx="3" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+    <text id="final" x="1401" y="750" font-family="Arial" font-size="16" fill="black" text-anchor="middle"></text>
+
+<path d="M1226 362H1230C1243.25 362 1254 372.745 1254 386V722C1254 735.255 1264.75 746 1278 746H1282" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M1226 1130H1230C1243.25 1130 1254 1119.25 1254 1106V770C1254 756.745 1264.75 746 1278 746H1282" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+</svg>
